@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt title="Anonymous Submission" version="6.4.1" root="/home/i1/Videos/kdeenlive_Projects/Guy standing" producer="main bin" LC_NUMERIC="en_US.UTF-8">
- <profile width="1280" frame_rate_den="1" height="720" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" colorspace="709" sample_aspect_den="1" description="HD 720p 25 fps" progressive="1" sample_aspect_num="1"/>
- <producer id="1" title="Anonymous Submission" out="5185" in="0">
+<mlt title="Anonymous Submission" LC_NUMERIC="en_US.UTF-8" producer="main bin" version="6.10.0" root="/home/i1/i1/scripts/music.videos/guystanding">
+ <profile frame_rate_num="25" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="1" description="HD 720p 25 fps" display_aspect_num="16" frame_rate_den="1" width="1280" height="720" sample_aspect_den="1"/>
+ <producer title="Anonymous Submission" id="1" in="0" out="5185">
   <property name="length">00:03:27:11</property>
   <property name="eof">pause</property>
   <property name="resource">simple plan-last one standing.mp3</property>
@@ -29,11 +29,12 @@
   <property name="kdenlive:file_size">7465392</property>
   <property name="kdenlive:file_hash">1df7482eb72c89192297ca41ee538871</property>
   <property name="global_feed">1</property>
+  <property name="meta.attr.comment.markup">Taku's Music Collection</property>
  </producer>
- <producer id="2" title="Anonymous Submission" out="147381" in="0">
+ <producer title="Anonymous Submission" id="2" in="0" out="147381">
   <property name="length">01:38:15:07</property>
   <property name="eof">pause</property>
-  <property name="resource">Guy Standing- Rentier Capitalism and the coming precariat revolt.mp4</property>
+  <property name="resource">Guy Standing - Rentier Capitalism and the coming precariat revolt.mp4</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
@@ -89,7 +90,7 @@
   <property name="kdenlive:docproperties.enableproxy">0</property>
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
-  <property name="kdenlive:docproperties.kdenliveversion">17.08.1</property>
+  <property name="kdenlive:docproperties.kdenliveversion">18.12.0</property>
   <property name="kdenlive:docproperties.position">0</property>
   <property name="kdenlive:docproperties.profile">atsc_720p_25</property>
   <property name="kdenlive:docproperties.projectfolder">/home/i8/kdenlive</property>
@@ -133,10 +134,10 @@
   <property name="kdenlive:docproperties.videotargettrack">-1</property>
   <property name="kdenlive:docproperties.decimalPoint">.</property>
   <property name="xml_retain">1</property>
-  <entry out="5185" producer="1" in="0"/>
-  <entry out="147381" producer="2" in="0"/>
+  <entry producer="1" in="0" out="5185"/>
+  <entry producer="2" in="0" out="147381"/>
  </playlist>
- <producer id="black" out="153371" in="0">
+ <producer id="black" in="0" out="153371">
   <property name="length">153372</property>
   <property name="eof">pause</property>
   <property name="resource">black</property>
@@ -145,13 +146,13 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry out="101869" producer="black" in="0"/>
+  <entry producer="black" in="0" out="101869"/>
  </playlist>
  <playlist id="playlist1">
   <property name="kdenlive:track_name">Audio 2</property>
   <property name="kdenlive:audio_track">1</property>
  </playlist>
- <producer id="1_playlist2" title="Anonymous Submission" out="5185" in="0">
+ <producer title="Anonymous Submission" id="1_playlist2" in="0" out="5185">
   <property name="length">00:03:27:11</property>
   <property name="eof">pause</property>
   <property name="resource">simple plan-last one standing.mp3</property>
@@ -181,10 +182,10 @@
   <property name="meta.attr.genre.markup">Rock</property>
   <property name="meta.attr.language.markup">English</property>
  </producer>
- <producer id="2_playlist2_audio" title="Anonymous Submission" out="147381" in="0">
+ <producer title="Anonymous Submission" id="2_playlist2_audio" in="0" out="147381">
   <property name="length">01:38:15:07</property>
   <property name="eof">pause</property>
-  <property name="resource">Guy Standing- Rentier Capitalism and the coming precariat revolt.mp4</property>
+  <property name="resource">Guy Standing - Rentier Capitalism and the coming precariat revolt.mp4</property>
   <property name="audio_index">1</property>
   <property name="video_index">-1</property>
   <property name="mute_on_pause">1</property>
@@ -231,8 +232,8 @@
  <playlist id="playlist2">
   <property name="kdenlive:track_name">Audio 1</property>
   <property name="kdenlive:audio_track">1</property>
-  <entry out="5124" producer="1_playlist2" in="0">
-   <filter id="fadeout" out="5125" in="5073">
+  <entry producer="1_playlist2" in="0" out="5124">
+   <filter id="fadeout" in="5073" out="5125">
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
     <property name="mlt_service">volume</property>
@@ -245,12 +246,12 @@
    </filter>
   </entry>
   <blank length="3172"/>
-  <entry out="147381" producer="2_playlist2_audio" in="53809"/>
+  <entry producer="2_playlist2_audio" in="53809" out="147381"/>
  </playlist>
- <producer id="2_video" title="Anonymous Submission" out="147381" in="0">
+ <producer title="Anonymous Submission" id="2_video" in="0" out="147381">
   <property name="length">01:38:15:07</property>
   <property name="eof">pause</property>
-  <property name="resource">Guy Standing- Rentier Capitalism and the coming precariat revolt.mp4</property>
+  <property name="resource">Guy Standing - Rentier Capitalism and the coming precariat revolt.mp4</property>
   <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
@@ -304,36 +305,36 @@
  </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <entry out="168" producer="2_video" in="19"/>
-  <entry out="5999" producer="2_video" in="5850"/>
-  <entry out="31050" producer="2_video" in="31031"/>
-  <entry out="6433" producer="2_video" in="6401"/>
-  <entry out="6520" producer="2_video" in="6466"/>
+  <entry producer="2_video" in="19" out="168"/>
+  <entry producer="2_video" in="5850" out="5999"/>
+  <entry producer="2_video" in="31031" out="31050"/>
+  <entry producer="2_video" in="6401" out="6433"/>
+  <entry producer="2_video" in="6466" out="6520"/>
   <blank length="31"/>
-  <entry out="6179" producer="2_video" in="6139"/>
-  <entry out="6794" producer="2_video" in="6692"/>
-  <entry out="8076" producer="2_video" in="7697"/>
+  <entry producer="2_video" in="6139" out="6179"/>
+  <entry producer="2_video" in="6692" out="6794"/>
+  <entry producer="2_video" in="7697" out="8076"/>
   <blank length="29"/>
-  <entry out="8139" producer="2_video" in="8111"/>
+  <entry producer="2_video" in="8111" out="8139"/>
   <blank length="25"/>
-  <entry out="8210" producer="2_video" in="8175"/>
-  <entry out="10075" producer="2_video" in="10033"/>
-  <entry out="10075" producer="2_video" in="10033"/>
-  <entry out="15093" producer="2_video" in="15019"/>
-  <entry out="59550" producer="2_video" in="59523"/>
-  <entry out="59682" producer="2_video" in="59645"/>
-  <entry out="15169" producer="2_video" in="15094"/>
-  <entry out="16848" producer="2_video" in="16663"/>
-  <entry out="16081" producer="2_video" in="16027"/>
-  <entry out="16992" producer="2_video" in="16958"/>
-  <entry out="21509" producer="2_video" in="21410"/>
-  <entry out="20127" producer="2_video" in="20088"/>
-  <entry out="20382" producer="2_video" in="20286"/>
-  <entry out="18241" producer="2_video" in="18202"/>
-  <entry out="15768" producer="2_video" in="15170"/>
-  <entry out="55732" producer="2_video" in="55695"/>
-  <entry out="24514" producer="2_video" in="24499">
-   <filter id="fade_to_black" out="24514" in="24510">
+  <entry producer="2_video" in="8175" out="8210"/>
+  <entry producer="2_video" in="10033" out="10075"/>
+  <entry producer="2_video" in="10033" out="10075"/>
+  <entry producer="2_video" in="15019" out="15093"/>
+  <entry producer="2_video" in="59523" out="59550"/>
+  <entry producer="2_video" in="59645" out="59682"/>
+  <entry producer="2_video" in="15094" out="15169"/>
+  <entry producer="2_video" in="16663" out="16848"/>
+  <entry producer="2_video" in="16027" out="16081"/>
+  <entry producer="2_video" in="16958" out="16992"/>
+  <entry producer="2_video" in="21410" out="21509"/>
+  <entry producer="2_video" in="20088" out="20127"/>
+  <entry producer="2_video" in="20286" out="20382"/>
+  <entry producer="2_video" in="18202" out="18241"/>
+  <entry producer="2_video" in="15170" out="15768"/>
+  <entry producer="2_video" in="55695" out="55732"/>
+  <entry producer="2_video" in="24499" out="24514">
+   <filter id="fade_to_black" in="24510" out="24514">
     <property name="start">1</property>
     <property name="mlt_service">brightness</property>
     <property name="kdenlive_id">fade_to_black</property>
@@ -343,22 +344,22 @@
    </filter>
   </entry>
   <blank length="10"/>
-  <entry out="15970" producer="2_video" in="15833"/>
-  <entry out="37197" producer="2_video" in="37159"/>
-  <entry out="37487" producer="2_video" in="37437"/>
-  <entry out="16026" producer="2_video" in="15971"/>
-  <entry out="37341" producer="2_video" in="37251"/>
-  <entry out="37016" producer="2_video" in="36932"/>
-  <entry out="24617" producer="2_video" in="24537"/>
-  <entry out="37374" producer="2_video" in="37342"/>
-  <entry out="11599" producer="2_video" in="11457"/>
-  <entry out="12432" producer="2_video" in="12121"/>
-  <entry out="9783" producer="2_video" in="9668"/>
-  <entry out="10936" producer="2_video" in="10890"/>
-  <entry out="11116" producer="2_video" in="11055"/>
+  <entry producer="2_video" in="15833" out="15970"/>
+  <entry producer="2_video" in="37159" out="37197"/>
+  <entry producer="2_video" in="37437" out="37487"/>
+  <entry producer="2_video" in="15971" out="16026"/>
+  <entry producer="2_video" in="37251" out="37341"/>
+  <entry producer="2_video" in="36932" out="37016"/>
+  <entry producer="2_video" in="24537" out="24617"/>
+  <entry producer="2_video" in="37342" out="37374"/>
+  <entry producer="2_video" in="11457" out="11599"/>
+  <entry producer="2_video" in="12121" out="12432"/>
+  <entry producer="2_video" in="9668" out="9783"/>
+  <entry producer="2_video" in="10890" out="10936"/>
+  <entry producer="2_video" in="11055" out="11116"/>
   <blank length="99"/>
-  <entry out="25305" producer="2_video" in="25224">
-   <filter id="fade_from_black" out="25232" in="25224">
+  <entry producer="2_video" in="25224" out="25305">
+   <filter id="fade_from_black" in="25224" out="25232">
     <property name="start">0</property>
     <property name="mlt_service">brightness</property>
     <property name="kdenlive_id">fade_from_black</property>
@@ -367,25 +368,25 @@
     <property name="end">1</property>
    </filter>
   </entry>
-  <entry out="10157" producer="2_video" in="10076"/>
-  <entry out="31400" producer="2_video" in="31348"/>
-  <entry out="25682" producer="2_video" in="25600"/>
-  <entry out="55514" producer="2_video" in="55371"/>
-  <entry out="46115" producer="2_video" in="46083"/>
-  <entry out="37019" producer="2_video" in="36971"/>
-  <entry out="31558" producer="2_video" in="31537"/>
-  <entry out="28222" producer="2_video" in="28167"/>
-  <entry out="29600" producer="2_video" in="29541"/>
-  <entry out="55560" producer="2_video" in="55539"/>
-  <entry out="30280" producer="2_video" in="30172"/>
-  <entry out="55640" producer="2_video" in="55595"/>
-  <entry out="57100" producer="2_video" in="57050"/>
-  <entry out="44166" producer="2_video" in="44110"/>
-  <entry out="37120" producer="2_video" in="37097"/>
-  <entry out="40069" producer="2_video" in="40021"/>
-  <entry out="32335" producer="2_video" in="32251"/>
-  <entry out="47051" producer="2_video" in="46996">
-   <filter id="filter0" out="47051" in="47022">
+  <entry producer="2_video" in="10076" out="10157"/>
+  <entry producer="2_video" in="31348" out="31400"/>
+  <entry producer="2_video" in="25600" out="25682"/>
+  <entry producer="2_video" in="55371" out="55514"/>
+  <entry producer="2_video" in="46083" out="46115"/>
+  <entry producer="2_video" in="36971" out="37019"/>
+  <entry producer="2_video" in="31537" out="31558"/>
+  <entry producer="2_video" in="28167" out="28222"/>
+  <entry producer="2_video" in="29541" out="29600"/>
+  <entry producer="2_video" in="55539" out="55560"/>
+  <entry producer="2_video" in="30172" out="30280"/>
+  <entry producer="2_video" in="55595" out="55640"/>
+  <entry producer="2_video" in="57050" out="57100"/>
+  <entry producer="2_video" in="44110" out="44166"/>
+  <entry producer="2_video" in="37097" out="37120"/>
+  <entry producer="2_video" in="40021" out="40069"/>
+  <entry producer="2_video" in="32251" out="32335"/>
+  <entry producer="2_video" in="46996" out="47051">
+   <filter id="filter0" in="47022" out="47051">
     <property name="start">1</property>
     <property name="mlt_service">brightness</property>
     <property name="kdenlive_id">fade_to_black</property>
@@ -395,20 +396,20 @@
    </filter>
   </entry>
   <blank length="9081"/>
-  <entry out="147381" producer="2_video" in="59710"/>
+  <entry producer="2_video" in="59710" out="147381"/>
  </playlist>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
   <blank length="950"/>
-  <entry out="6839" producer="2_video" in="6798"/>
+  <entry producer="2_video" in="6798" out="6839"/>
  </playlist>
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
  </playlist>
- <tractor id="maintractor" title="Anonymous Submission" global_feed="1" out="101870" in="0">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="101869">
   <track producer="black_track"/>
-  <track producer="playlist1" hide="video"/>
-  <track producer="playlist2" hide="video"/>
+  <track hide="video" producer="playlist1"/>
+  <track hide="video" producer="playlist2"/>
   <track producer="playlist3"/>
   <track producer="playlist4"/>
   <track producer="playlist5"/>
