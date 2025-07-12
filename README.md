@@ -1,1 +1,1 @@
-<a href="https://22i.github.io/vidding.html">vidding</a>
+<a href="https://22i.github.io/video.magic.html">video magic</a>
